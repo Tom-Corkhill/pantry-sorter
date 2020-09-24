@@ -20,7 +20,7 @@ export const GlobalProvider = ({ children }) => {
     // Pantry actions
     async function getFoodItems() {
         try {
-            const res = await axios.get('/api/v1/pantry');
+            const res = await axios.get('/pantry');
  
             dispatch({
                 type:'GET_FOOD_ITEMS',
@@ -42,7 +42,7 @@ export const GlobalProvider = ({ children }) => {
         }
 
         try {
-            const res = await axios.post('api/v1/pantry', foodItems, config);
+            const res = await axios.post('/pantry', foodItems, config);
 
             dispatch({
                 type: 'ADD_FOOD_ITEM',
@@ -59,7 +59,7 @@ export const GlobalProvider = ({ children }) => {
 
     async function deleteFoodItem(id) {
         try {
-            await axios.delete(`/api/v1/pantry/${id}`);
+            await axios.delete(`/pantry/${id}`);
 
             dispatch({
                 type: 'DELETE_FOOD_ITEM',
@@ -74,7 +74,7 @@ export const GlobalProvider = ({ children }) => {
     // Favourite actions
     async function getFavouriteItems() {
         try {
-            const res = await axios.get('/api/v1/favourites');
+            const res = await axios.get('/favourites');
  
             dispatch({
                 type:'GET_FAVOURITE_ITEMS',
@@ -113,7 +113,7 @@ export const GlobalProvider = ({ children }) => {
 
     async function deleteFavouriteItem(id) {
         try {
-            await axios.delete(`/api/v1/favourites/${id}`);
+            await axios.delete(`/favourites/${id}`);
 
             dispatch({
                 type: 'DELETE_FAVOURITE_ITEM',
