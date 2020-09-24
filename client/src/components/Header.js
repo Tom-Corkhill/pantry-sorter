@@ -28,8 +28,8 @@ export const Header = () => {
           <Typography variant="h6" className={classes.title}>
             PANTRY SORTER
           </Typography>
-          <Button color="inherit"><a className="anchorText" href="/pantry">Pantry</a></Button>
-          <Button color="inherit"><a className="anchorText" href="/favourites">Favourites</a></Button>
+          <Button color="inherit"><a className="anchorText" href="/pantrys">Pantry</a></Button>
+          <Button color="inherit"><a className="anchorText" href="/favouritess">Favourites</a></Button>
         </Toolbar>
       </AppBar>
     </div>
