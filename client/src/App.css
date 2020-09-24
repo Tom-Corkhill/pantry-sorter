@@ -1,0 +1,34 @@
+.container {
+    margin: 30px auto;
+    width: 350px;
+  }
+
+/* Navbar css */
+.link {
+  font-size: 18px;
+}
+.left {
+  position: absolute;
+  left: 44%;
+}
+.size {
+  height: 60px;
+}
+
+
+/* Pantry css */
+.title {
+  background-color: beige;
+  border: 1px solid black;
+}
+.add {
+  margin-top: 50px;
+  position: absolute;
+  left: 44%;
+}
+.dateSpace {
+  margin: 15px;
+}
+.anchorText {
+  color: white !important;
+}
