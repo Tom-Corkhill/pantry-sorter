@@ -20,7 +20,7 @@ export const GlobalProvider = ({ children }) => {
     // Pantry actions
     async function getFoodItems() {
         try {
-            const res = await axios.get('/pantry');
+            const res = await axios.get('https://pantrysorter.herokuapp.com/pantry');
  
             dispatch({
                 type:'GET_FOOD_ITEMS',
@@ -42,7 +42,7 @@ export const GlobalProvider = ({ children }) => {
         }
 
         try {
-            const res = await axios.post('/pantry', foodItems, config);
+            const res = await axios.post('https://pantrysorter.herokuapp.com/pantry', foodItems, config);
 
             dispatch({
                 type: 'ADD_FOOD_ITEM',
@@ -59,7 +59,7 @@ export const GlobalProvider = ({ children }) => {
 
     async function deleteFoodItem(id) {
         try {
-            await axios.delete(`/pantry/${id}`);
+            await axios.delete(`https://pantrysorter.herokuapp.com/pantry/${id}`);
 
             dispatch({
                 type: 'DELETE_FOOD_ITEM',
@@ -74,7 +74,7 @@ export const GlobalProvider = ({ children }) => {
     // Favourite actions
     async function getFavouriteItems() {
         try {
-            const res = await axios.get('/favourites');
+            const res = await axios.get('https://pantrysorter.herokuapp.com/favourites');
  
             dispatch({
                 type:'GET_FAVOURITE_ITEMS',
@@ -113,7 +113,7 @@ export const GlobalProvider = ({ children }) => {
 
     async function deleteFavouriteItem(id) {
         try {
-            await axios.delete(`/favourites/${id}`);
+            await axios.delete(`https://pantrysorter.herokuapp.com/favourites/${id}`);
 
             dispatch({
                 type: 'DELETE_FAVOURITE_ITEM',
