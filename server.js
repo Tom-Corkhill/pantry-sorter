@@ -24,8 +24,8 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
   }
 
-app.use("/pantry", pantry);
-app.use("/favourites", favourites);
+app.use("https://pantrysorter.herokuapp.com/pantry", pantry);
+app.use("https://pantrysorter.herokuapp.com/favourites", favourites);
 
 
 const PORT = process.env.PORT || 5000;
