@@ -96,7 +96,7 @@ export const GlobalProvider = ({ children }) => {
         }
 
         try {
-            const res = await axios.post('api/v1/favourites', favouriteItems, config);
+            const res = await axios.post('https://pantrysorter.herokuapp.com/favourites', favouriteItems, config);
 
             dispatch({
                 type: 'ADD_FAVOURITE_ITEM',
