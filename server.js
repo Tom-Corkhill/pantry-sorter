@@ -7,7 +7,7 @@ const connectDB = require("./config/db");
 dotenv.config({ path: "./config/config.env" });
 
 connectDB();
-
+ 
 const pantry = require("./routes/pantry");
 const favourites = require("./routes/favourites");
 
