@@ -20,14 +20,14 @@ function App() {
                 <React.Fragment></React.Fragment>
               )} />
 
-              <Route path="/pantrys" render={props => (
+              <Route path="/pantry" render={props => (
                 <React.Fragment>
                   <FoodItemList />
                   <AddFoodItem />
                 </React.Fragment>
               )} />
 
-              <Route path="/favouritess" render={props => (
+              <Route path="/favourites" render={props => (
                 <React.Fragment>
                   <FavouriteItemList />
                   <AddFavouriteItem />
