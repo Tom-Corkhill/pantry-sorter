@@ -20,7 +20,7 @@ export const GlobalProvider = ({ children }) => {
     // Pantry actions
     async function getFoodItems() {
         try {
-            const res = await axios.get('https://pantrysorter.herokuapp.com/pantry');
+            const res = await axios.get('/api/pantry');
  
             dispatch({
                 type:'GET_FOOD_ITEMS',
@@ -42,7 +42,7 @@ export const GlobalProvider = ({ children }) => {
         }
 
         try {
-            const res = await axios.post('https://pantrysorter.herokuapp.com/pantry', foodItems, config);
+            const res = await axios.post('/api/pantry', foodItems, config);
 
             dispatch({
                 type: 'ADD_FOOD_ITEM',
@@ -59,7 +59,7 @@ export const GlobalProvider = ({ children }) => {
 
     async function deleteFoodItem(id) {
         try {
-            await axios.delete(`https://pantrysorter.herokuapp.com/pantry/${id}`);
+            await axios.delete(`/api/pantry/${id}`);
 
             dispatch({
                 type: 'DELETE_FOOD_ITEM',
@@ -74,7 +74,7 @@ export const GlobalProvider = ({ children }) => {
     // Favourite actions
     async function getFavouriteItems() {
         try {
-            const res = await axios.get('https://pantrysorter.herokuapp.com/favourites');
+            const res = await axios.get('/api/favourites');
  
             dispatch({
                 type:'GET_FAVOURITE_ITEMS',
@@ -96,7 +96,7 @@ export const GlobalProvider = ({ children }) => {
         }
 
         try {
-            const res = await axios.post('https://pantrysorter.herokuapp.com/favourites', favouriteItems, config);
+            const res = await axios.post('/api/favourites', favouriteItems, config);
 
             dispatch({
                 type: 'ADD_FAVOURITE_ITEM',
@@ -113,7 +113,7 @@ export const GlobalProvider = ({ children }) => {
 
     async function deleteFavouriteItem(id) {
         try {
-            await axios.delete(`https://pantrysorter.herokuapp.com/favourites/${id}`);
+            await axios.delete(`/api/favourites/${id}`);
 
             dispatch({
                 type: 'DELETE_FAVOURITE_ITEM',
