@@ -8,7 +8,7 @@ import { AddFavouriteItem } from './components/AddFavouriteItem';
 
 import { GlobalProvider } from './context/GlobalState';
 
-
+ 
 import './App.css';
 
 function App() {
