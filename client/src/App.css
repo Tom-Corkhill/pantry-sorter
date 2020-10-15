@@ -55,3 +55,52 @@
 .favourites-date {
   margin-right: 10px;
 }
+
+/* Landing */
+.landing-background { 
+  background: url(https://images.unsplash.com/photo-1590794056675-8354831935b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1263&q=80) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
+.landing-box {
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  padding: 40px 40px;
+  margin: 300px auto;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.landing-button {
+  -webkit-appearance: none;
+  padding: 5px;
+  border: none;
+  background-color: rgb(86, 119, 128);
+  color: #fff;
+  font-weight: 600;
+  border-radius:2% !important;
+  width: 276px;
+  height: 38px;
+  margin-bottom: 20px;
+}
+.landing-button:hover {
+  background-color: rgb(111, 152, 163);
+  cursor: pointer;
+}
+
+.landing-anchor {
+  text-decoration: none;
+  color: rgb(86, 119, 128);
+}
+
+.landing-anchor:hover {
+  color: rgb(23, 76, 90);
+  cursor: pointer;
+}

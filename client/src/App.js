@@ -17,7 +17,19 @@ function App() {
           <Router>
             <Header />
               <Route exact path="/" render={props => (
-                <React.Fragment></React.Fragment>
+                <React.Fragment>
+                  <div className="landing-background">
+                    <div>
+                      <div className="landing-box">
+                        <h1>Welcome to Pantry Sorter!</h1>
+                        <h5>Head on over to the Pantry to get started!</h5>
+                        <a className="landing-anchor" href="/pantry"><button className="landing-button">Pantry</button></a>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </React.Fragment>
               )} />
 
               <Route path="/pantry" render={props => (

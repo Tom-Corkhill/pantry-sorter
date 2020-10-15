@@ -8,13 +8,15 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    marginBottom: theme.spacing(10),
+    marginBottom: theme.spacing(0),
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(0),
   },
   title: {
     flexGrow: 1,
+    textDecoration: 'none',
+    color: 'white'
   },
 }));
 
@@ -26,7 +28,7 @@ export const Header = () => {
       <AppBar position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
-            PANTRY SORTER
+            <a className={classes.title} href="/">PANTRY SORTER</a>
           </Typography>
           <Button color="inherit"><a className="anchorText" href="/pantry">Pantry</a></Button>
           <Button color="inherit"><a className="anchorText" href="/favourites">Favourites</a></Button>
