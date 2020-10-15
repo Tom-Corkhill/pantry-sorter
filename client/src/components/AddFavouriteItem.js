@@ -21,7 +21,7 @@ export const AddFavouriteItem = () => {
     }
 
     return (
-        <div className="left">
+        <div className="favourites-add">
             <h3>Add new Favourite Food Item</h3>
             <form noValidate autoComplete="off" onSubmit={onSubmit}>
                 <div className="dateSpace">

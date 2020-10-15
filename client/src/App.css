@@ -3,7 +3,7 @@
     width: 350px;
   }
 
-/* Navbar css */
+/* Navbar */
 .link {
   font-size: 18px;
 }
@@ -16,8 +16,8 @@
 }
 
 
-/* Pantry css */
-.title {
+/* Pantry */
+.title-pantry {
   background-color: beige;
   border: 1px solid black;
 }
@@ -31,4 +31,27 @@
 }
 .anchorText {
   color: white !important;
+}
+
+
+/* Favourites */
+.title-favourites {
+  position: relative;
+  left: 44%;
+  margin-bottom: 70px;
+}
+.favourite-foods {
+  background-color: beige;
+  border: 1px solid black;
+}
+.favourites-table {
+  margin-top: 175px;
+}
+.favourites-add {
+  position: absolute;
+  left: 40%;
+  margin-top: 50px;
+}
+.favourites-date {
+  margin-right: 10px;
 }

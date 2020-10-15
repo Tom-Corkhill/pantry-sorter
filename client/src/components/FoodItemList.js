@@ -18,7 +18,7 @@ export const FoodItemList = () => {
   
     return (
         <React.Fragment>
-            <Row className="title">
+            <Row className="title-pantry">
                 <Col>
                     <h1 className="text-center">Food Item</h1>
                 </Col>

@@ -15,10 +15,13 @@ export const FavouriteItemList = () => {
  
     return (
         <React.Fragment>
-            <h3>Favourites</h3>
-            <ul>
+            <div className="left">
+                <h1>Favourites</h1>
+            </div>
+            <ul className="favourites-table">
                 {favouriteItems.map(favouriteItem => (<FavouriteItem key={favouriteItem._id} favouriteItem={favouriteItem}/>))}
             </ul>
         </React.Fragment>
     )
 }
+ 

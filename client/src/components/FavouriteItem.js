@@ -24,17 +24,17 @@ export const FavouriteItem = ({ favouriteItem }) => {
     return (
         <React.Fragment>
             <form onSubmit={onSubmit}>
-                <Grid container spacing={3}>
+                <Grid  className="favourite-foods" container spacing={2}>
                     <Grid item xs={3}>
                         <p>{favouriteItem.text}</p>
                     </Grid>
                     <Grid item xs={3}>
-                        <label htmlFor="date">Date</label>
+                        <label className="favourites-date" htmlFor="date">Date</label>
                         <input type="date" value={date} onChange={(e) => setDate(e.target.value)} required />
                     </Grid>
                     <Grid item xs={3}>
                         <button value={favouriteItem.text} onClick={(e) => setText(e.target.value)}>
-                            Add Food
+                            Add Food to Pantry
                         </button>
                     </Grid>
                     <Grid item xs={3}>
