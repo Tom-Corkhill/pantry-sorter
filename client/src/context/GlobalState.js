@@ -42,7 +42,7 @@ export const GlobalProvider = ({ children }) => {
         }
 
         try {
-            const res = await axios.post('/api/pantry', foodItems, config);
+            await axios.post('/api/pantry', foodItems, config);
 
             dispatch({
                 type: 'ADD_FOOD_ITEM',
@@ -96,7 +96,7 @@ export const GlobalProvider = ({ children }) => {
         }
 
         try {
-            const res = await axios.post('/api/favourites', favouriteItems, config);
+            await axios.post('/api/favourites', favouriteItems, config);
 
             dispatch({
                 type: 'ADD_FAVOURITE_ITEM',

@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: 'none',
     color: 'white'
   },
+  bar: {
+    backgroundColor: '#6f98a3'
+  }
 }));
 
 export const Header = () => {
@@ -25,7 +28,7 @@ export const Header = () => {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar className={classes.bar} position="static">
         <Toolbar>
           <Typography variant="h6" className={classes.title}>
             <a className={classes.title} href="/">PANTRY SORTER</a>
