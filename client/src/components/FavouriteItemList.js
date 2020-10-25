@@ -7,9 +7,7 @@ import { GlobalContext } from '../context/GlobalState';
 export const FavouriteItemList = () => {
     const { favouriteItems, getFavouriteItems } = useContext(GlobalContext);
 
-    useEffect(() => {
-        getFavouriteItems();
-    }, []);
+    useEffect(getFavouriteItems, []);
 
     sortAlphabetically(favouriteItems);
  

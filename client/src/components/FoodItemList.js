@@ -10,9 +10,7 @@ import Col from 'react-bootstrap/Col';
 export const FoodItemList = () => {
     const { foodItems, getFoodItems } = useContext(GlobalContext);
 
-    useEffect(() => {
-        getFoodItems();
-    }, []);
+    useEffect(getFoodItems, []);
 
     sortByDate(foodItems);
   
